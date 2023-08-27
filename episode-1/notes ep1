@@ -1,0 +1,46 @@
+prereqisites for this course : html css js.
+vs code uses something known as Emmet : it basically generates some code for u.
+ex: html:5 then hit enter. it gives u basic html skeleton.
+React is js library, which is coded by Facebook engineers, in javascript.
+React can be applied to small portion of a page also.
+
+React CDN
+crossorigin
+
+React-DOM : is a react library , which is useful for dom o/p's
+
+React.createElement (basically is a object) takes 3 arguments
+1. tag
+2. {} - attributes to tag
+3. write whatever u want to put inside the tag (child)
+ex : React.createElement("h1",{},"helloworld!!!!")
+
+React element is nothing but normal js object.
+
+"type React in console"
+
+q) what is DOM?
+The Document Object Model is a cross-platform and language-independent interface that treats an HTML or XML 
+document as a tree structure wherein each node is an object representing a part of the document. The DOM 
+represents a document with a logical tree.
+
+-The "cross-platform" or multiplatform software is a type of application / program / software that works on
+ various operating systems or devices, which are often called platforms. A platform means an operating 
+ system such as Windows, Mac OS, Android, or iOS.
+
+ everything in an HTML document is a "node": The entire document is a document node. Every HTML element is 
+ an element node. The text inside HTML elements are text nodes.
+
+- The Dom node manipulation is most costliest o/p on browser.
+- suppose there is webpage, adding something in the page and hiding something for this DOM tree is getting changed.
+- keeping some nodes and removing some nodes from the DOM is the costliest o/p, all these frameworks and 
+  libraries are trying to optimize this.
+  
+-createRoot
+-render
+
+- "JSX" stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write 
+- and add HTML in React.
+
+<link rel="stylesheet" href="./index.css" />
+<script src="./App.js"></script>

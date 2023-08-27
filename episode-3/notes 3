@@ -1,0 +1,36 @@
+npx parcel index.html -- npx is executing the npm package parcel with the source file  as index.html
+
+- Instead of using the npx parcel index.html again and again to start the project, we create a scripts in package.json that will build our project.
+
+- npm run start is same as npm start (start is the keyword reserved by npm)
+- npm run build is not same as npm build it is only applicable for start.
+
+- reactdom will convert the react element(which is object) to html and pushes to the browser. will replace everything which are in id=root in index.html.
+
+- JSX is javascript syntax, which is easier to create react elements.
+  JSX and react are different, in react jsx is used to make the developers life easier.
+  JSX is not html in js, it is html like syntax
+  JSX is the mix of html and js (u can write js inside jsx by just adding curly braces {} - inside curly braces u can write js)
+js engine cant read the code written in JSX.
+
+
+- components 
+  there are 2 types of components 
+  i) class based components : (old way of writing) uses classes in js
+  ii) functional components : (new way) is just a normal js function which returns the piece of jsx code.
+                             - javascript function which returns the react element.(jsx is nothing but react element)
+                             - whenever u are creating a component the name of the component's first letter should be in caps otherwise u will get an error. 
+
+q)what is component composition?
+  composing the 2 components into one another.
+
+- in jsx we can have only one root element 
+- React fragment -- behaves like an empty tag
+   <React.Fragment></React.Fragment> is same <></>
+
+
+-if you are getting data from api , what if api sends some malicious data
+and the attacker runs the js in browser and can know the session,local storage, cookies,read data and can get info about ur device this is know as cross site scripting.
+-JSX prevents cross site scripting.
+
+https://babeljs.io -- babel website

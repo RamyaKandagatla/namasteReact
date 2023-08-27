@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.logo-container {
+  margin: 5px;
+}
+
+.logo {
+  width:100px;
+}
+
+.nav-links >ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 28px;
+}
+
+.nav-links >ul >li {
+  padding: 10px;
+  font-size: 24px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.res-card {
+  margin: 10px;
+  width:250px;
+  padding: 6px;
+  background-color: lightgrey;
+}
+
+.res-card:hover {
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.search {
+  margin: 5px;
+  display:flex;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.filterBtn {
+  margin:0 10px;
+  cursor: pointer;
+}
+
+.btn-cont {
+  padding:2px;
+  margin: 5px;
+}
+
+.search-btn {
+  cursor: pointer;
+}

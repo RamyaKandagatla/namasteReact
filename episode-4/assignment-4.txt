@@ -1,0 +1,69 @@
+1. is JSX mandatory for React?
+   not mandatory, we can use React.createElement(),
+   Each JSX element is just syntactic sugar for calling React.createElement(component, props, ...children).
+   So, anything you can do with JSX can also be done with just plain JavaScript.
+
+2. is ES6 mandatory for React?
+  no, 
+  --- with ES6 :
+  class Greeting extends React.Component {
+    render() {
+      return <h1>Hello, {this.props.name}</h1>;
+    }
+  }
+  --- If you don’t use ES6 yet, you may use the create-react-class module instead
+  var createReactClass = require('create-react-class');
+  var Greeting = createReactClass({
+  render: function() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+  });
+
+{Component()} vs <Component/> vs <Component><Component/> -- everything is same
+
+3. how can i write comments in JSX?
+  {/* matter */}
+
+4. what is <React.Fragment></React.Fragment> and <></> ? 
+
+  -- To return multiple elements from a React component, you'll need to wrap the element in a root element.
+  -- You should use the React Fragment when you want to add a parent element to fulfill the JSX syntax, 
+    but without introducing an extra node to the DOM. After compilation, 
+    the fragment component does not make it to the DOM—only the children element do.
+  -- <></> is the shorthand tag for React.Fragment only diff is with React.Fragment we can use key attribute.
+
+5. what is virtual DOM?
+  The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept 
+  in memory and synced with the “real” DOM by a library such as ReactDOM.This process is called reconciliation.
+
+6. what is Reconciliation in React?
+Reconciliation is the process by which React updates the UI to reflect changes in the component state. 
+The reconciliation algorithm is the set of rules that React uses to determine how to update the UI in the 
+most efficient way possible.
+  https://medium.com/javarevisited/react-reconciliation-algorithm-86e3e22c1b40#:~:text=Reconciliation%20is%20the%20process%20by%20which%20React%20updates%20the%20UI,Model)%20to%20update%20the%20UI.
+  https://miro.medium.com/v2/resize:fit:1200/1*o8X7VFBBUls2PM70Dtj_ig.gif
+
+7. what is React Fiber?
+
+    go to below link
+    https://legacy.reactjs.org/docs/faq-internals.html
+    https://github.com/acdlite/react-fiber-architecture
+
+8. why do we need keys in React?
+
+
+9. can we use index as keys in React?
+
+
+10. what is prop in React ? ways to use?
+  -prop is the shorthand of properties.
+  -properties are something u can pass to the components.
+  -If u want to pass data dynamically to a component we can pass it as a prop.
+  -props are just normal argument to a function.
+  -passing prop to a component is just like passing arguments to a function.
+  -props in a component is js object.
+  
+11. what is config driven UI?
+  based on the config the UI will be rendered.
+
+

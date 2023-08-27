@@ -1,0 +1,35 @@
+we can do everything that can be done with React,  with html, css and js? then why React is required?
+  with React developer experience for coding will be easy, and we can make large scale applications, 
+  and can show in the browser by writing little code.
+  React will make the dom operations super fast.
+  React is very good at dom maipulations bcs it has virtual dom.
+  reusable components.
+
+- folder structure in React?
+  there is no particular folder structure its up to u.
+  we can do basis on the files usage
+  dont overthink for folder structure , u can restructure later.
+  dont make too much nesting
+
+
+- better to keep all the hardcoded data in separate files.
+    only the components file u can name starting with capital letter , good practice.
+    constants file name with small letter.
+    inside constants file better to write all constants name with capital letters in snake case(space with underscore)
+
+- there are 2 types of exports and imports 
+  - one is named export and other is default export.
+  - default export with file cant be written twice(module cannot have multiple default exports)
+  - in named export , we write export before defining the name of the constant.
+      (ex : export const name = 'Ramya')
+
+-- React hooks -- is the normal js utility functions(normal js utility functions written by facebook developers)
+ -- useState - whenever the state variable updates then react re-renders the component.
+
+
+ actual dom - which contains tags 
+ virtual dom - is the representation of actual dom which is the js object.
+ 
+ Diff Algorithm : fins out the difference b/w the virtual DOM's, the updated virtual DOM and the previous Virtual DOM, then it updates the DOM (UI) for every render cycle.
+
+

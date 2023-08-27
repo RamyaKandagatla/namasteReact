@@ -1,0 +1,19 @@
+1. what are the various ways to add images into our App? explain with code examples?
+2. what would happen if we console.log(useState())?
+3. how will useEffect behave if we dont add a dependency array?
+4. what is SPA?
+5. what is difference between Client side routing and server side routing?
+
+coding:
+1. add shimmer effect without installing a library?
+2. install react-router-dom?
+3. create a appRouter and provide it to the app
+4. create Home, About, Contact page with Link (use child routes)?
+5. Make a error page for routing errors?
+6. create a restaurant page with dynamic restaurant id
+7. (extra) - create a login page using Formik Library
+
+Resources:
+React-Router-DOM - https://reactrouter.com/en/main
+Client side routing - https://reactrouter.com/en/main/start/overview
+Formik - https://formik.org/

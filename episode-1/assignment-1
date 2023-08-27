@@ -1,0 +1,71 @@
+1) what is Emmet?
+ it basically generates some code in vscode.
+ Emmet uses different abbreviations and short expressions depending on what's passed, and then dynamically converts the abbreviations into the full code. Emmet is mostly used for HTML, XML, and CSS, but it can also be used with programming languages.
+ designed to speed up the process of writing and editing the code by providing the set of shortcuts that can be quickly expandable to full code blocks.
+
+2) Difference between library and framework?
+A library is something contained within your code. And a framework is a container for your application.
+  library - 
+    -Library is like building your home from the ground up. The house can be made in any style you  prefer and the rooms can be arranged and decorated however you like.
+    -libraries are used to solve a specific problem or to add a specific feature to your program.
+    - contain prewritten code snippets that can be used (and reused) for common JavaScript functions.
+    - A well-defined set of instructions that provide unique properties and behavior to your data. 
+  Framework - 
+    -is like buying a new home. The house is already built, so you don’t have to worry about building problems, but you can’t choose how the rooms are arranged.
+    - JavaScript frameworks are a full toolkit for shaping and organizing your web application.
+    - Frameworks describe how developers design applications.
+    - A collection of libraries that provide unique properties and behavior to your application.
+
+3) what is CDN ? why we use it?
+  with the help of CDN links we got the react and react-dom into our project in ep-1.
+  CDN - A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users
+  CDN is a network of servers linked together with the goal of delivering content as quickly, cheaply, reliably, and securely as possible. In order to improve speed and connectivity, a CDN will place servers at the exchange points between different networks.
+   uses: The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites like Facebook, Netflix, and Amazon.
+   --Improving website load times 
+   --Reducing bandwidth costs
+   --Increasing content availability and redundancy
+   --Improving website security
+
+4) what is crossorigin in script tag?
+  The crossorigin attribute sets the mode of the request to an HTTP CORS Request. Web pages often make requests to load resources on other servers. Here is where CORS comes in. A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+
+5) what is the difference between React and React-DOM ?
+React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+  React - is the js Library which is coded by facebook
+  react-dom - is the react library, which is useful for dom o/p's.
+
+6) what is the difference between react.development.js and react.production.js files via CDN?
+  i) react.development.js only meant for development, and are not suitable for production.
+    as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds
+
+  ii) Minified and optimized production versions of React are available at react.production.js
+     The production build, on the other hand, runs in production mode which means this is the code running on your client's machine
+
+7)what are async and defer attributes in js?
+  async and defer are boolean attributes which are used along with script tag to load the external scripts effeciently into our webpage.
+  <script src=""></script>
+    here html parsing goes on when script tag is encountered html parsing stopped , from network scripts are fetched and then scripts are executed, then html parsing starts again.
+  <script async src=""></script>
+    here html parsing goes on and scripts are also fetched parallely , after fetching scripts html parsing is stopped and scripts are executed, then again html parsing continues.
+  <script defer src=""></script>
+    here html parsing goes on, parallely scripts are fetched , after hmtl parsing is done then only scripts are executed.
+  -- async attribute does not guarantee the order of execution of scripts.
+  if u have multiple scripts which are dependent on each other, better to u defer.
+  -- defer attribute maintains the order of execution of scripts.
+
+  HTML PARSING - HTML parsing is the process of taking raw HTML code, reading it, and generating a DOM tree object structure from it.
+  parcing - broken into smaller pieces and analyzed so other software can understand it.
+
+  8) What makes ReactJS faster?
+Virtual DOM is definitely the most important factor that contributes to React performance, but it's not the only one. React has self-contained components that can be easily integrated and reused across multiple projects. Consequently, you can drastically save development time.
+React renders the DOM (Document Object Model) virtually first as a copy of the actual DOM. React will only make the changes necessary changes to the UIs through the virtual DOM. Consequently, an application doesn't have to re-render the entire User Interface and speeds up loading times.
+
+
+-- React doesn't support search engine optimization (SEO).
+
+
+
+
+
+

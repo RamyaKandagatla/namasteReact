@@ -1,0 +1,96 @@
+
+npm git repo:
+    https://github.com/npm/npm-expansions/blob/master/expansions.txt
+
+--- diff b/w compiler and Interpreter : both converts the high level language into machine          understandable.
+ compiler : takes the program as whole
+ interpreter : take single lines of code
+--- Babel :
+        Babel is a free and open-source JavaScript transcompiler that is mainly used to convert ECMAScript 2015+ code into backwards-compatible JavaScript code that can be run by older JavaScript engines. It allows web developers to take advantage of the newest features of the language.
+
+        - babel converts the jsx to react.createElement(react understable) or js engine understable or browser understable.
+
+
+
+**** initialised the git , to keep our changes there.(it is done in the starting of ep-2 only or eldse google it for creating).
+
+to start the project 👻 :
+    - npm init
+    - npm install -D parcel (install packages)
+    - npx parcel index.html (igniting the app using parcel, npx- executes the npm package and also by using same npx it will be hosted on local server)
+    - npm install react
+    - npm i react-dom
+    -- for production ready do --- npx parcel build index.html
+
+-- we have many ways to get react into our project ,
+    with the help of CDN links we got react and reactDOM into our project in ep-1, but this is not a good way, why?
+    bcz, it uses unpkg.com network call to get react, we can install using npm and get it from node_modules only, noo need to make other network call.
+    in cdn links react version also there we have to keep changing those links to update version.
+
+-- dist 
+  when u do npx parcel index.html it generates the development build and puts in the folder dist and hosted into the port 1234.
+
+-- .parcel-cache 
+  =-when u refresh the page or save the file it uses the parcel-cache and dist to update the page
+  -supports HMR
+
+-- which makes our app scalable and production ready?
+   is it React making our app faster?
+   React makes our app fast but, there are lot of other packages that are required to make our app production ready.
+   lot of other library.
+   lot of other code - js.
+
+-- official website for npm -- npmjs.com
+  npm doesn't have fullform
+  npm manages packages.
+  packages are dependencies.
+
+-- the most important package in our app is bundler?
+ ex: webpack
+    parcel
+    Rollup
+    FuseBox
+    Browserify
+    Vite
+
+-- create-react-app inside uses webpack and babel.
+
+-- code consists of HTML, CSS , JS , ...
+  To bundle the whole code together, 
+  whole code needs to be compressed,
+  whole code needs to be minified,
+  whole code needs to be cleaned,
+  Before sending to production.
+
+-- package.json - basically is a file , which is configuration of npm & keeps track of what version of npm is installed in our system.
+ 2 types of packages we can install 
+ 1. dev-dependency --- required in development (ex : npm install -D parcel , -D dev dependency).
+ 2. normal-dependency --- can be used in production
+
+-- diff b/w package.json and package-lock.json ?
+  - package.json has caret and tidle.
+      caret - it updates the version in decimals.
+      tidle - it updates to the latest version in numbers.
+      want to get exact version of the package when u installed remove caret and tidle.
+  - package-lock.json keeps the track of exact versions & shas which is installed & locks it.
+      shas is maintained bcz which is there in local is used in production also.
+-- node_modules : is like db which contains actual data of the packages we install.
+
+-- whatever u can re-generate dont put into git, keep in the .gitignore file.
+-- it is better to use react from our node_modules instead of cdn links bcz cdn links are making the network call to unpkg.com and getting react into our project and if the version is updated we have to keep changing the urls (cdn links). so better to use react as dependency from npm instead of making other network call and keep changing the links.
+
+q) if we install one package only folder with that package name needs to be created in node_modules why all other files are created?
+  Bcz the packages we install has its own dependencies, again that dependencies has its own dependencies , this continues, this is know as TRANSITIVE DEPENDENCY.
+
+-- the package we install has its own dependency we can see it in the folder of package i.e, in the package.json in node_modules.
+
+-- to make our app compatible with the older versions of browser we need the browserslist 
+( https://browserlist.dev/ ).
+
+
+
+
+
+
+
+

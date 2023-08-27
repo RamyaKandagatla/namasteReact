@@ -1,0 +1,36 @@
+-monolithic
+-microservices
+
+* There are 2 approaches how webapp fetch data from api:
+  1. as soon as the page loads we make the api call and wait for response(data) and then render the UI as soon as the data comes.
+    Loads ---->  API -----> Render
+
+  2. as soon as the page loads render the ui then make api call and re-render again after response came from api.
+    Loads ---> Render ----> API ----> Render
+
+** 2nd approach is for better ux , we will be using this only in react.
+   in react render cycles are very fast.
+ 
+** useEffect - is just like a normal js function , we call that function "useEffect()",
+ this useEffect function take 2 parameters one is arrow function and other is dependency array.
+ useEffect(()=>{},[])
+ It will be called after ur component renders.
+
+ ********* "Learn Fetch and CORS(Youtube video)"
+
+ - promises are used to handle async o/p's in js.
+
+****** install "Allow CORS: Access control allow origin" extension.
+
+** Shimmer UI : we load the fake page until we get data from api.
+
+- Conditional rendering : rendering based on condition is known as conditional rendering.
+
+- in useState we are using const , then how the value of const is getting changed???
+   when we call the "setChange" then the new instance is created with the changed value ,then re-render of that whole component happens with the help of reconciliation algorithmn.
+   - whenever u change the local state variable react re-renders the component.
+   - whenever the state variable updates, react triggers the reconciliation cycle(re-renders the component )
+
+ex: const [change, setChange] = useState[""];
+
+-- to track the value of input , we need to bind the value of input to the local state variable.

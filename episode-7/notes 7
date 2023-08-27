@@ -1,0 +1,33 @@
+** useEffect : it takes 2 parameters one is callback function which is compulsory and other is dependency array which is not compulsory.
+  - based on the dependency array the functionality changes.
+  - if there is no dependency array, it will be called everytime the component renders.
+  - if there is empty dependency array [], it will be called just once only on the initial render of the component.
+  - if we keep something in the dependency array , it will only be called when the dependency changes.
+  - irrespective of the dependency array useeffect will be called on the initial render of the component.
+
+** useState : it is used to create local state variables inside the functional component.
+  - u cannot write useState outside the functional component it will throw an error, try and check.
+  - never "create" ur useState hook inside a condition (like in "if condn") or in loops(for loop) or inside a function.
+  - in the starting of ur functional component itself create ur usestate , for not to create any inconsistency in ur code.
+
+** npm package react-router-dom is used for routing.
+
+- createBrowserRouter - creates a routing configuration (will define what will happen on a specific route)
+                      - configuration is a list of objects , each and every object defines a path and what should     happen on that path.
+                      - after creating the configuration, we need to provide the configuration to render it, this is done by Routerprovider
+- rafce : will create a component fro u automatically in vscode. pls dont do it .
+
+- useRouteError is the hook given to us by react-router-dom
+- Outlet is given by react-router-dom, which is filled by children according to the path.
+- dont use the anchor tag in react, it will reload the whole page. instead use link from react-router-dom.
+
+- 2 types of routing in web apps
+  - client side routing : we are not making any network calls while moving from pages, bcz all the components are already loaded into ur app
+  - server side routing : when u change the route it makes the network cl and that page comes for server. 
+
+Single page application : it is just the one page and components getting interchanged via client side routing.
+
+- GraphQL : is a query language for APIs and a runtime for fulfilling those queries with your existing data.
+
+- useParams : hook which is given by react-router-dom.
+- Link : is given react-router-dom , behind the scenes it uses the anchor tag.

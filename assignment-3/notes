@@ -1,0 +1,5 @@
+q)role of type attribute in script tag? what options can i use there?
+
+- The type attribute specifies the type of the script.
+
+- The type attribute identifies the content between the <script> and </script> tags.
