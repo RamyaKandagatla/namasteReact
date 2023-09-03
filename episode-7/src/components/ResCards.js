@@ -1,7 +1,7 @@
 import { RES_LOGO } from "../utils/constants";
 
 const ResCards = (props) => {
-  const {ResData : {data : { cloudinaryImageId, name, cuisines, avgRating, costForTwo, deliveryTime }}} = props
+  const {ResData : {info : { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla }}} = props
   return(
     <div className="res-card">
       <img className="res-logo" src={RES_LOGO+cloudinaryImageId}
@@ -9,8 +9,8 @@ const ResCards = (props) => {
       <h3>{name}</h3>
       <h4>{cuisines.join(', ')}</h4>
       <h4>{avgRating}</h4>
-      <h4>₹{costForTwo / 100} For Two</h4>
-      <h4>{deliveryTime} minutes</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{sla.deliveryTime} minutes</h4>
     </div>
   )
 }

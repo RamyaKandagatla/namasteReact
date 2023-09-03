@@ -15,7 +15,7 @@
 - createBrowserRouter - creates a routing configuration (will define what will happen on a specific route)
                       - configuration is a list of objects , each and every object defines a path and what should     happen on that path.
                       - after creating the configuration, we need to provide the configuration to render it, this is done by Routerprovider
-- rafce : will create a component fro u automatically in vscode. pls dont do it .
+- rafce : will create a component for u automatically in vscode. pls dont do it .
 
 - useRouteError is the hook given to us by react-router-dom
 - Outlet is given by react-router-dom, which is filled by children according to the path.
@@ -28,6 +28,7 @@
 Single page application : it is just the one page and components getting interchanged via client side routing.
 
 - GraphQL : is a query language for APIs and a runtime for fulfilling those queries with your existing data.
+  - fetching the data that is required from api
 
 - useParams : hook which is given by react-router-dom.
 - Link : is given react-router-dom , behind the scenes it uses the anchor tag.

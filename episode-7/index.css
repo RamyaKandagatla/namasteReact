@@ -31,7 +31,7 @@
 
 .res-card {
   margin: 10px;
-  width:250px;
+  width:220px;
   padding: 6px;
   background-color: lightgrey;
 }
@@ -62,4 +62,18 @@
 
 .search-btn {
   cursor: pointer;
+}
+
+.shimmer-cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.shimmer-card {
+  margin: 10px;
+  width: 220px;
+  height: 400px;
+  padding: 6px;
+  background-color: lightgrey;
 }
