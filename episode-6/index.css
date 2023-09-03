@@ -9,16 +9,16 @@
 }
 
 .logo {
-  width:100px;
+  width: 100px;
 }
 
-.nav-links >ul {
+.nav-links > ul {
   list-style-type: none;
   display: flex;
   margin-top: 28px;
 }
 
-.nav-links >ul >li {
+.nav-links > ul > li {
   padding: 10px;
   font-size: 24px;
 }
@@ -31,7 +31,7 @@
 
 .res-card {
   margin: 10px;
-  width:250px;
+  width: 220px;
   padding: 6px;
   background-color: lightgrey;
 }
@@ -43,7 +43,7 @@
 
 .search {
   margin: 5px;
-  display:flex;
+  display: flex;
 }
 
 .res-logo {
@@ -51,15 +51,29 @@
 }
 
 .filterBtn {
-  margin:0 10px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
 .btn-cont {
-  padding:2px;
+  padding: 2px;
   margin: 5px;
 }
 
 .search-btn {
   cursor: pointer;
+}
+
+.shimmer-cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.shimmer-card {
+  margin: 10px;
+  width: 220px;
+  height: 400px;
+  padding: 6px;
+  background-color: lightgrey;
 }

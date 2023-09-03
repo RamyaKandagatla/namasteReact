@@ -4,6 +4,7 @@ we can do everything that can be done with React,  with html, css and js? then w
   React will make the dom operations super fast.
   React is very good at dom maipulations bcs it has virtual dom.
   reusable components.
+  reconciliation algorithm(render cycles are fast)
 
 - folder structure in React?
   there is no particular folder structure its up to u.

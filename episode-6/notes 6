@@ -1,5 +1,8 @@
--monolithic
--microservices
+-monolithic - everthing in same repository, here all services should be written in same language.
+-microservices -
+ - db, BE , UI, Auth, email, sms everything is different, we can work in diff repositories and can have diff deployment cycles.
+ - we can use diff tech stack for diff microservices.
+ - all the services run in diff specific ports. and at the end they can be mapped to same domain name. 
 
 * There are 2 approaches how webapp fetch data from api:
   1. as soon as the page loads we make the api call and wait for response(data) and then render the UI as soon as the data comes.

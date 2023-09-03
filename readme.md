@@ -1,29 +1,3 @@
 Namasthe React 🐯
 
 reference : [https://github.com/namastedev/namaste-react/commits/main]()
-
-# Parcel - is a Bundler
-
- -- creates the dev build
- -- host the local server and also https we can get while running in local.
- -- HMR - hot module replacement (what changes u do in code it will reflect in page -- automatic refresh of the page).
- -- parcel uses File Watching Algorithm which is written in C++
- -- caching - faster builds
- -- Image optimization
- -- MINIFICATION - is a technique used to make code files, such as CSS, images, and JavaScript, smaller in size without affecting their "functionality". It achieves this by removing unnecessary characters and elements from the code.
--- BUNDLING - Bundling involves combining multiple files, such as CSS or JavaScript files, into a single       downloadable resource. The purpose is to minimize the number of requests made by the browser to the server when loading a web page. Instead of the browser making separate requests for each individual file, bundling allows it to retrieve all the bundled files in just one request.
-    reduces the back-and-forth communication between the browser and the server by combining multiple files into a single package. This helps make web pages load faster, especially the first page, by minimizing the number of server requests needed to retrieve all the necessary files.
- -- COMPRESS
- -- CONSISTENT HASHING - ???
- -- DIFFERENTIAL BUNDLING (supports older browsers)
- -- CODE SPLITTING - Code-Splitting is a feature supported by bundlers like Webpack, Rollup and Browserify (via factor-bundle) which can create multiple bundles that can be dynamically loaded at runtime. Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user, which can dramatically improve the performance of your app. While you haven’t reduced the overall amount of code in your app, you’ve avoided loading code that the user may never need, and reduced the amount of code needed during the initial load.
- -- Diagnostic (errors in ur page).
- -- Error handling.
- -- Tree shaking - removes unused code for u
- -- diff dev and production bundles.
-
-- u can study more about parcel in [parceljs.org]()
-
-# Webpack
-
---
