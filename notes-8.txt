@@ -1,0 +1,59 @@
+-- episode-8 : about class based components
+
+functional component is a function which returns some piece of jsx.
+
+class based component is a class which extends React.Component and it has a render 
+method that returns some piece of jsx.
+
+React.Component is basically a class which is given to us by react, the class UserClass
+is inheriting some properties from it.
+  ex : class UserClass extends React.Component {
+    render() {
+        return(<div></div>)
+    }
+  }
+
+whenever the instance of particular newclass(ex:UserClass) is created a constructor is called.
+
+to functional component we can send the props same as class but using in the component is different .
+- in functional component we can directly get props as parameter in function.
+- in class based we should use constructor , constructor will receive props and in constructor we 
+    should write super(props) also.
+
+q) why do we write super(props) ?
+
+- Life cycle of react class based components? how this class based components mounted on to the web page?
+  - loading the component or mounting the component on to the web page(is same).
+  - whenever the instance of particular newclass(ex:UserClass) is created first constructor is called 
+      then render is called.
+  - componentDidMount: after constructor and render is done , componentDidMount is called.
+     componentDidMount is used to make api calls ? bcz react want to quickly render the component and 
+      make api call, as soon as we get data from api then re-render the component.
+  - b/w child and parent class based components : first parent constructor, parent render,
+     then child constructor , child render, child componentDidMount last parent componentDidMount.
+
+- https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+- why react is fast?
+when the component is mounted, it is mounted in 2 phases 
+ phases:
+ 1. render phase: Pure and has no side effects. May be paused, aborted or restarted by React.
+   - it has constructor and render.
+ 2. commit phase : Can work with DOM, run side effects, schedule updates.
+   - in this phase react actually updates the dom and then componentDidMount is called.
+
+ - when the component is mounting first constructor, then render is called ,then react actually updates the dom,
+    once dom is updated then componentDidMount is called.
+
+- never ever compare react class based life cycle with functional components.
+- componentDidMount same as useEffect ? nooo
+
+-  componentWillUnmount : clear the things when u move from one component to other.
+  ex: setInterval
+      setTimeout 
+
+- in componentDidMount  this.timer = setInterval(()=>{},2000);
+- in componentWillUnmount clearInterval(this.timer);
+
+- useEffect const timer = setInterval(()=>{},2000);
+- useEffect  return () => { clearInterval(timer)}

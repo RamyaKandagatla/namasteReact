@@ -77,3 +77,9 @@
   padding: 6px;
   background-color: lightgrey;
 }
+
+.user-cont {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
