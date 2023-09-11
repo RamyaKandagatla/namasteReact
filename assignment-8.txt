@@ -1,0 +1,22 @@
+theory :
+1. How do you create nested routes react-router-dom configuration?
+2. Read about createHashRouter, createMemoryRouter from React Router docs
+3. what is the order of life cycle method calls in class based components?
+4. why do we use componentDidMount?
+5. why do we use componentWillUnmount? show with example
+6. why do we use super(props) in constructor?
+7. why can't we have the callback function of useEffect async?
+
+coding :
+1. create class based components
+  create 2 class based child components
+  pass props from parent to child
+  create a constructor
+  create a state variable inside child
+  use this.setState to update it
+  what if there are mutiple state variables 
+  write a console.log for each life cycle method
+  play with the console logs to find out the correct order of their execution 
+2. create interval inside componentDidMount?
+  use clearInterval to fix the issue cased by that interval
+

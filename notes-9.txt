@@ -1,0 +1,27 @@
+single responsibility principle: each component should have a single responsibility to display like restaurantcard should display only restaurant card on to the web page.
+- to get single responsibility to each componnet we should break the code into components accordingly.
+modularity means u break the code into diff diff small modules so that ur code becomes more maintainable and more testable.
+custom hooks: creating our own hooks
+ hook are just a utility functions.
+
+- when u are create a custom hook always start the hook name with "use" ex: useRestaurantMenu
+- shortcut to open emoji in windows (windowkey + .) 
+
+-- when we develop large applications, we have so many components, then performance will be not that high, howto optimize our app when we develop large applications?
+ - chunking
+ - code splitting
+ - dynamic loading
+ - lazy loading
+ - on demand loading
+ - dynamic import 
+
+- when we dont use chunking, whole application is loaded in one js file(where file size will be very high) and it takes soo much time to load our application, that why chunking is used to load in different js files.
+- when chunkingis done, then once our application is loaded whatever is required that js file is only loaded.
+
+- lazy() is a function given to us by react, it is named import from react.
+- lazy takes a callback function.
+- ex: const componentname = lazy(() => import('component path'));
+
+- Suspense is a component that comes from React.
+- Suspense is used to wrap the component at the root level that should be lazy loaded,  the Suspense takes the attribute fallback( takes jsx).
+- fallback attribute takes JSX , that JSX will be shown until the lazy loaded component is loaded.
