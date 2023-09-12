@@ -1,0 +1,33 @@
+- in this episode we will make our app look beautiful using css.
+
+- SCSS and SASS
+- styled components
+- Tailwind css
+- material ui
+- bootstrap
+- chakra ui
+- ant design
+
+- latest framework : Tailwind css
+- tailwind css is a generic framework works with all other frameworks , it works with normal html css and js also.
+- how to configure tailwind css in project - go to website - click on get started - with framework guides
+- we are using parcel
+- postcss - a tool for transforming css with js.
+
+- classname with cssproperties.
+
+-there are pros and cons for tailwind
+
+- read more in tailwind website
+pros:
+ - no need to move between files.
+ - faster development in css.
+ - lightweight
+ - it will only include the css which is reqquired(in code if u not used shadow it wont import class shadow)
+
+cons:
+ - need to all css to the specific tag in the code itself, code becomes ugly.
+   ex: <div className="text-lg font-bold p-4 m-4 border border-yellow-200 bg-red-400 flex flex-wrap justify-center" ></div>
+
+- code becomes difficult to read.
+
