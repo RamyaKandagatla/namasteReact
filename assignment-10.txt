@@ -1,0 +1,14 @@
+Theory:
+1.explore all the ways of writing css
+2. how do we configure Tailwind
+3. In tailwind.config.js, what does all the keys mean (content, theme, extend, plugins)
+4. why do we have .postcssrc file
+
+coding:
+1. Configure tailwind and try to build your whole app using tailwind
+
+References:
+https://styled-components.com/
+https://tailwind.com/
+https://getbootstrap.com/
+material UI - https://mui.com/

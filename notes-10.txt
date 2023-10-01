@@ -8,6 +8,8 @@
 - chakra ui
 - ant design
 
+-Installed tailwind with parcel 
+
 - latest framework : Tailwind css
 - tailwind css is a generic framework works with all other frameworks , it works with normal html css and js also.
 - how to configure tailwind css in project - go to website - click on get started - with framework guides

@@ -1,0 +1,18 @@
+Optimising our App 
+
+Theory:
+1. When and why do we need lazy()?
+2. What is Suspence?
+3. Why we got this error: A component suspended while responding to synchronous input. This will cause the UI to be replaced with a loading indicator.
+ To fix, updates that suspend should be wrapped with startTransition? How does suspense fix this error?
+4.Advantages and disadavantages of using this code splitting pattern?
+5. when do we and why do we need suspense?
+
+coding:
+1. create your own custom hooks
+2. try out lazy and suspense
+3. make your code clean
+
+refrences:
+https://legacy.reactjs.org/docs/hooks-custom.html
+code-splitting

@@ -1,0 +1,16 @@
+Theory:
+
+1. What is prop Drilling?
+2. What is lifting the state up?
+3. What are the context Provider and context Consumer?
+4. If you dont pass a value to the provider does it take the default value?
+ code will break and throws error
+
+coding:
+
+1. practice React Context with code examples?
+2. Try out Nested Contexts?
+
+References: 
+lifting state up : https://legacy.reactjs.org/docs/lifting-state-up.html
+react context : https://legacy.reactjs.org/docs/context.html

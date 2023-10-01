@@ -1,19 +1,22 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {APP_LOGO} from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinestatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [ btnName, setBtnName ] = useState("Login");
   
   const OnlineStatus = useOnlineStatus();
 
+  const {loggedInUser} = useContext(UserContext);
+
   return(
-    <div className="flex justify-between p-4 bg-yellow-100 shadow-gray-100 shadow-lg">
+    <div className="flex justify-between bg-orange-200 shadow-gray-100 shadow-lg">
       <div className="logo-container">
-        <img className="w-24" src={APP_LOGO}></img>
+        <img className="w-32" src={APP_LOGO}></img>
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center mx-2">
         <ul className="flex font-bold">
           <li className="px-4">
             onlineStatus : {OnlineStatus ? "🟢" : "🔴"}
@@ -31,10 +34,11 @@ const Header = () => {
             <Link to='/grocery'>Grocery</Link>
           </li>
           <li className="px-4">Cart</li>
-          <button className="btn-cont" onClick={() => 
+          <button className="px-4" onClick={() => 
             { btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')}}>
             {btnName}
           </button>
+          <li>{loggedInUser}</li>
         </ul>
       </div>
     </div>

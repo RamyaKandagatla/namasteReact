@@ -1,0 +1,23 @@
+higher order components: 
+ higher order component is a function that takes a component and returns a component.
+
+ when we write higher order components , these higher order components are pure functions.
+higher order component will enhance the component which it takes , but not change the component it takes.
+
+- controlled and uncontrolled components
+- state uplifting.
+- important part of react application is to manage its data.
+- all the react applications have 2 imp layers,  one layer is ui layer another is data layer, ui layer is powered by data layer.
+-data layer consists of state, props,localvariables, whatever data u have in ur application is data layer.
+
+- props drilling: passing the props from parent to child to its child and to its child and go on if the application is large.
+  - the props that is sent from parent is used in its last child, we are passing to every child and not using until the last child, so this is know as props drilling.
+  - we are passing the props from top level to the many levels down, this is known as props drilling.
+
+-- to avoid props drilling, context is used.
+- context is like a global place, where data is kept and anybody can access.
+- "useContext" react hook in  functional based component and <componentname.Consumer> in class based components both are the ways to consume the context.
+
+- difference between Redux and Context???
+ - for small scale applications context u can use it is built-in in React.
+ - Redux is the library, which can be used for large scale applications which offers u more such as redux-thunk, middleware.

@@ -1,14 +1,17 @@
-import ResCards from "./ResCards";
-import { useEffect, useState } from "react";
+import ResCards, {withDiscount} from "./ResCards";
+import { useContext, useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinestatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfRestuarants, setListOfRestuarants] = useState([]);
 
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchName, setSerachName] = useState("");
+
+  const DiscountTag = withDiscount(ResCards);
 
   useEffect(() => {
     fetchData();
@@ -34,6 +37,8 @@ const Body = () => {
       You are offline!! please check your internet connection!!!
     </h1>)
   }
+
+  const {loggedInUser,setUserName} = useContext(UserContext);
 
   return  ( listOfRestuarants.length === 0 ?
     <Shimmer />
@@ -71,11 +76,20 @@ const Body = () => {
             GoodRatedRestaurants
           </button>
         </div>
+        <div className="m-4 p-4">
+          <label className="font-bold">UserName : </label>
+          <input
+            type="text"
+            className="border border-solid border-cyan-700 outline-none p-[0.42rem] rounded-md"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
       </div>
       <div className="flex flex-wrap justify-center">
         {filteredRestaurants.map((ele, index) => (
           <Link to={"/restaurant/" + ele.info.id} key={ele.info.id}>
-            <ResCards ResData={ele} />
+            {ele.info?.aggregatedDiscountInfoV3 ? <DiscountTag ResData={ele}/> : <ResCards ResData={ele} />}
           </Link>
         ))}
       </div>
