@@ -1,0 +1,27 @@
+- redux is a library.
+- redux is not the only library that is used to manage the state, we have zustand(explore zustand).
+- redux is not mandatory use it when only it is required, all applications which are build with redux can also be build without using redux.
+- if u are building large scale application where the data is heavily used, lot of read and write operations are happening place in ur ui application, there are lot of components  and a lot of data is being transferred b/w these components, the application has grown huge then using Redux makes sense.
+- if u are building a small app, very small app with few components u dont need redux.
+- redux libraries:
+ there are 2 libraries that redux offers:
+   1.React-Redux
+   2.Redux Toolkit
+
+# Redux Toolkit
+  https://redux-toolkit.js.org/tutorials/quick-start
+ - install react-redux and @reduxjs/toolkit
+ - build our store
+ - connect our store to the app
+ - slice (cartSlice)
+ - dispatch (action)
+ - selector
+
+- where u need to be careful while using redux:
+  - when u are using selector make sure u are subscribing to the right portion of the store.
+
+Redx Toolkit(RTK) says either mutate the existing state or return the new state.
+
+- read "RTK query" from documentation - https://redux-toolkit.js.org/tutorials/quick-start
+
+- 

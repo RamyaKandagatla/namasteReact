@@ -3,6 +3,7 @@ import {APP_LOGO} from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinestatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [ btnName, setBtnName ] = useState("Login");
@@ -10,6 +11,9 @@ const Header = () => {
   const OnlineStatus = useOnlineStatus();
 
   const {loggedInUser} = useContext(UserContext);
+
+  const cartItems = useSelector((state) => state.cart.items);
+  console.log("🚀 ~ file: Header.js:16 ~ Header ~ CartItemsLength:", cartItems)
 
   return(
     <div className="flex justify-between bg-orange-200 shadow-gray-100 shadow-lg">
@@ -33,7 +37,9 @@ const Header = () => {
           <li className="px-4">
             <Link to='/grocery'>Grocery</Link>
           </li>
-          <li className="px-4">Cart</li>
+          <li className="px-4">
+            <Link to='/cart'>Cart [{cartItems.length}]</Link>
+          </li>
           <button className="px-4" onClick={() => 
             { btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')}}>
             {btnName}
