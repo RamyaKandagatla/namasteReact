@@ -1,0 +1,19 @@
+"Theory"
+
+what are the different types of testing?
+
+what is Enzyme?
+
+Enzyme vs React Testing Library?
+
+What is Jest and why do we use it?
+
+"Coding"
+
+Setup React Testing Library
+
+write the unit tests for header component to test for Logo, Cart-0 items , and Online Status
+
+Write an Integration test cases for the search feature on the homepage
+
+write integration test case for add to cart flow

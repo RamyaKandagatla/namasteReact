@@ -3,7 +3,8 @@ import { RES_LOGO } from "../utils/constants";
 const ResCards = (props) => {
   const {ResData : {info : { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla }}} = props
   return(
-    <div className="border bg-gray-200 w-60 m-2 p-2 rounded-lg hover:bg-gray-100 shadow-xl">
+    <div className="border bg-gray-200 w-60 m-2 p-2 rounded-lg hover:bg-gray-100 shadow-xl"
+     data-testid="Res-Card">
       <img className="rounded-md" src={RES_LOGO+cloudinaryImageId}
         ></img>
       <h3 className="font-bold text-lg">{name}</h3>

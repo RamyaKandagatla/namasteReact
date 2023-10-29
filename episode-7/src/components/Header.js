@@ -13,7 +13,6 @@ const Header = () => {
   const {loggedInUser} = useContext(UserContext);
 
   const cartItems = useSelector((state) => state.cart.items);
-  console.log("🚀 ~ file: Header.js:16 ~ Header ~ CartItemsLength:", cartItems)
 
   return(
     <div className="flex justify-between bg-orange-200 shadow-gray-100 shadow-lg">

@@ -1,0 +1,59 @@
+what libraries are required for testing:
+
+ react testing library : is built on top of DOM Testing library.
+     -react testing library uses jest behind the scenes, jest is a delightful javascript testing framework with a focus   on simplicity.
+    #Setting up the testing in our app:
+     1. react-testing library: npm i -D @testing-library/react
+     2. jest : https://jestjs.io/docs/getting-started
+            npm i -D jest
+     3. jest using babel needs additional dependencies: npm install --save-dev babel-jest @babel/core @babel/preset-env
+     4. need to configure babel into our application.
+     5. configure parcel config file to disable default babel transpilation.
+     6. to run the test cases : npm run test (configured in package.json).
+     7. jest configuration  npx jest --init
+     8. install jsdom library(for jest version 28 and greater than 28)
+     9. install @babel/preset-react
+     10. install @testing-library/jest-dom
+- parcel already uses babel, and parcel has its own configuration for babel, now we are trying to extra configuration(for jest) , now parcel will be confused, bcz parcel configuration will be conflicted with this configuration(babel.config.js).
+
+read this document for resolving the conflicts : https://parceljs.org/languages/javascript/#babel ,in this website check "Usage with other tools"
+ - parcel by default has its own configuration, but suppose if u wish to use our own custom configuration.
+ 
+ * Choose the test environment that will be used for testing » - Use arrow-keys. Return to submit.
+    node
+>   jsdom (browser-like)
+    - when u run test cases there is no server running or does not run on browser, they will need a runtime to execute the test cases for that we use jsdom
+
+
+- // how do we right a testcase , we right a function, that func takes 2 arguments , 1 is string and other is callback fn.
+
+- when u do console.log of the what written in test cases, it will return u an JSX Element (react element, which an
+   js object, react fiber node , virtualdom object)
+
+- suppose there are so many test cases and our test file size is increasing and it will become difficult to manage,
+so we can create a some group of test cases, we can group the test cases using "describe"
+
+- instead of "test" u can write as "it" also
+- there is no difference b/w "it" and "test"
+
+- there are 3 things in the tescases:
+ render
+ query
+ assert
+
+- we cannot make an actual network call using test. bcz it is running in the "jsdom" which is browser like environment.
+-we dont need internet connectivity to run the test cases.
+
+- similar to HMR while running the application, can we do for running test cases also, intead of doing npm run test again and again.
+ in package-json include this "watch-test": "jest --watch".
+
+-- whenever u are doing state updates and fetch , wrap your component inside "act"
+ - act function comes from "react-dom/test-utils"
+
+ -- beforeAll : this function will run before all the testcases.
+ -- beforeEach : before each test this "beforeEach" fn will run.
+ -- afterAll : 
+
+ -- coverage -> lcov-report -> utils -> index.html 
+        in index.html right click and open with live server it will give u the coverage report 
+        that index.html file will show the detailed coverage report where it is not covered the test cases also.
